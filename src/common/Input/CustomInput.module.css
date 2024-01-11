@@ -1,0 +1,43 @@
+.inputContainer {
+  width: 100%;
+}
+
+.input {
+  border: none;
+  outline: none;
+  width: 90%;
+  border: 0.15vw solid rgb(231, 230, 230);
+  height: 2.4vw;
+  margin: 0;
+  padding: 0;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+.error {
+  color: red;
+}
+
+.input::placeholder {
+  color: rgb(166, 166, 166);
+  /* font-size: .8vw; */
+  font-size: 1.5vh;
+  /* margin-left: 1vw; */
+  font-weight: 600;
+}
+
+@media screen and (max-width: 620px) {
+  .inputContainer {
+    /* height: 6vw; */
+  }
+  .input {
+    /* height: 6vw; */
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .input::placeholder {
+    font-size: 3.2vw;
+    font-weight: normal;
+  }
+}

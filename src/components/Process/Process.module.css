@@ -1,0 +1,42 @@
+
+.processContainer{
+    display: flex;
+    gap: 10vw;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+  }
+  
+  .processItem{
+    display: flex;
+    gap: 1.2vw;
+    justify-content: center;
+    align-items: start;
+    border-bottom: .1vw solid black;
+  
+  
+  
+  }
+  
+  .processItemText{
+    font-size: 3.75vw;
+  }
+  
+  .disabeled{
+    opacity: .5;
+  }
+  
+  
+  .verifiedImg{
+    width: 6vw;
+    height: auto;
+  
+  }
+
+  
+@media screen and (min-width: 870px) {
+    .processContainer{
+        display: none;
+
+    }
+}
+  

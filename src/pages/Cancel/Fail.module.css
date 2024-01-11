@@ -1,0 +1,67 @@
+.body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color :gray;
+}
+.route-specific {
+  /* background-color: #ff3c3c; */
+}
+.content {
+  height: 40vh; /* Adjust the height as needed */
+  width: 40vw;
+  background-color:white;
+  border-radius: 2vw;
+   box-shadow: 5px 10px 15px 20px rgb(253, 118, 118)
+}
+.checked {
+  /* height: 10vw; */
+  width: 20vw;
+  margin-top: -7vw;
+  padding: 1vw 1vw;
+  transition: transform 0.9s ease;
+ 
+}
+
+.checked:hover,
+.checked:focus {
+  transform: rotate(360deg);
+}
+.label {
+  font-size: 2vw;
+  font-weight: 700;
+  color: red;
+  
+  /* margin-top: 1vw; */
+}
+.backbutton {
+  height: 2vw;
+  width: 20vw;
+  background-color: #ff3c3c;
+  color: #fff;
+  border-radius: 1vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 2vw;
+}
+.backbutton:hover {
+  background-color: red;
+}
+.backbutton:focus {
+  background-color: black;
+}
+
+.btncontain {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.successtxt {
+  margin: 0vw 1vw 0vw 1vw;
+  margin-top: 1vw;
+  font-size: 1vw;
+}

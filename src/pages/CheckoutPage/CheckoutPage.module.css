@@ -1,0 +1,291 @@
+
+
+
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.checkoutContainer{
+    width: 80vw;
+}
+.header{
+    margin-bottom: 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    /* width: 80vw; */
+    height: 4.8vw;
+    /* height: 10vh; */
+}
+
+.headingText{
+    color: #414141;
+    /* font-size: x-large; */
+    font-size: 1.25vw;
+    /* font-size: x-large; */
+    font-weight: 600;
+}
+
+
+.productsContainer{
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.productsInnerContainer{
+    width: 18vw;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    border-left: .15vw solid rgb(226, 226, 226);
+}
+
+.productsItemContainer{
+    justify-content: start;
+    width:20vw;
+    padding-left: 2vw;
+
+   
+
+    display: flex;
+}
+
+
+.productsWrapper{
+    border-bottom: 2px solid rgb(226, 226, 226);
+}
+
+
+.productImage{
+    height: 7vw;
+    width: 6vw;
+    margin: 1.2vw;
+}
+
+.productName{
+   color: #5E5E5E;
+   font-weight: 600;
+   font-size: .8vw;
+}
+
+.prodPrice{
+color: #FF3C3C;
+font-weight: 600;
+font-size: 1vw;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: start;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.totalPrice{
+    color: #FF3C3C;
+font-weight: bold;
+/* font-size: x-large; */
+font-size: 1.25vw;
+
+}
+
+.semiPrice{
+    color: rgb(204, 204, 204);
+/* font-weight: 600; */
+/* font-size: large; */
+font-size: .9vw;
+
+}
+.totalText{
+    color: #414141;
+    font-weight: 600;
+    font-size: .9vw;
+
+}
+
+.totalInnerContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3vw;
+}
+
+.btnBackToShopping{
+border: .15vw solid #FF3C3C;
+color: #FF3C3C;
+background-color: white;
+outline: none;
+
+padding-left:2vw;
+padding-right: 2vw;
+padding-top: .5vw;
+padding-bottom: .5vw;
+/* width: 10vw; */
+height: 3vw;
+}
+
+.btnBackToShopping:hover{
+    border: 2px solid #5d2323;
+color: #5d2323;
+
+}
+
+.mainHeading{
+    text-align: start;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    font-weight: bolder;
+    font-size: 2.8vw;
+    color: #262626;
+}
+
+
+.btnPayment{
+    background-color: #FF3C3C;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: large;
+    height: 3vw;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+padding-top: .5vw;
+padding-bottom: .5vw;
+
+}
+
+.btnText{
+    font-size: 1vw;
+}
+
+.btnPayment:hover{
+    background-color: #742424;
+
+
+}
+.buttonContainer{
+    margin-top: 3.2vw;
+    display: flex;
+    gap: 2vw;
+    justify-content: start;
+}
+
+.rowForm{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.columnForm{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.formContainer{
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   
+
+}
+
+.OrderSummary{
+    
+    height: 15vw;
+    background-color: #E0E0E0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summaryInerContainer{
+    margin-left: 6vw;
+}
+
+.SummaryPriceText{
+    margin-right: 6vw;
+    font-size: 4vw;
+    color: #F46B5B;
+}
+
+.summaryInerContainer{
+    display: flex;
+    gap: 2vw
+    ;
+}
+
+@media screen and (max-width:870px) {
+    .mobileBillingDetails{
+        font-weight: 500;
+        text-align: start;
+        color: black;
+        font-size: 2.5vw;
+
+
+
+    }
+
+  .mainHeading{
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: start;
+  }
+
+    .btnText{
+        font-size: 3.5vw;
+    }
+
+    .btnBackToShopping{
+        width: 85vw;
+        height: 11vw;
+    }
+
+    .btnPayment{
+        width: 85vw;
+        height: 11vw;
+    }
+
+    .buttonContainer{
+        flex-direction: column;
+    }
+    .rowForm{
+    flex-direction: column;
+    }
+    .visibility{
+        display: none;
+    }
+    .header{
+        background-color: white;
+        border-bottom: .2vw solid #D8D8D8;
+    }
+
+    .productsContainer{
+        flex-direction: column;
+    }
+
+    .productsInnerContainer{
+        display: none;
+    }
+
+    .checkoutContainer{
+        width: 85vw
+    }
+    
+}

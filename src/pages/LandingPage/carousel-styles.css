@@ -1,0 +1,12 @@
+.carousel .carousel-status {
+    text-shadow: none;
+    color: transparent;
+  }
+
+
+  .carousel .control-dots .dot {
+    background-color: #FF3C3C;
+  
+    /* background-color: black; */
+
+  }

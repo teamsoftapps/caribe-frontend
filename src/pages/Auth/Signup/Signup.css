@@ -1,0 +1,289 @@
+.login {
+  height: 80vh;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  flex: 1;
+}
+.heading {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.header {
+  /* display: flex;
+  background-color: #ff3c3c;
+  z-index: 100;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  flex: 0.2;
+  height: 20vh;
+  align-items: center; */
+  display: flex;
+    background-color: #ff3c3c;
+    z-index: 100;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    flex: 0.2 1;
+    height: 20vh;
+    align-items: center;
+    width: 100vw;
+}
+.loginContainer {
+  display: flex;
+  justify-content: center;
+}
+.loginBox {
+  padding: 2vh;
+  width: 50vh;
+  height: 61vh;
+  margin-top: 5vh;
+  background-color: white;
+  border-radius: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.loginMblbox {
+  flex: 0.8;
+  margin-top: 5vh;
+  flex-direction: column;
+  display: flex;
+}
+.loginInput {
+  margin-bottom: 1vh;
+  height: 4vh;
+  border-radius: 5px;
+  border: 0.1vw solid gray;
+  font-size: 2vh;
+  padding-left: 2vh;
+}
+.loginInput:focus {
+  outline: none;
+}
+.loginButton {
+  margin-top: 2.5vh;
+  height: 6vh;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff3c3c;
+  color: white;
+  font-size: 2vh;
+  font-weight: 500;
+  cursor: pointer;
+}
+.loginButton:hover,
+.loginButton:active {
+  background-color: #762020;
+}
+.loginButton:focus {
+  outline: none;
+}
+.signup {
+  font-size: 1.5vh;
+}
+
+.labels {
+  font-weight: 700;
+  text-align: start;
+  margin-bottom: 0.2vh;
+  font-family: "Poppins", sans-serif;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.PassEye {
+  height: auto;
+  width: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 1vh;
+  top: 5.3vh;
+}
+.image {
+  width: 30vh;
+  height: auto;
+}
+.changeMode{
+  font-weight: bold;
+   color: red
+}
+
+.changeMode:hover{
+  color: rgb(103, 23, 23);
+}
+.ProgressContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:100vw;
+  /* opacity: 0; */
+  
+  /* background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,46,46,1) 40%, rgba(255,60,60,1) 100%); */
+/* background-color: red;  */
+
+}
+
+@media screen and (max-width: 800px) {
+  .loginBox {
+    width: 52vh;
+    height: 62vh;
+  }
+
+  .image {
+    width: 25vh;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .login {
+    background-color: white;
+  }
+  .heading {
+    text-align: start;
+    margin-bottom: 4vh;
+  }
+
+  .header {
+    background-color: #ff3c3c;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    height: 15vh;
+  }
+
+  .loginInput {
+    margin-bottom: 0;
+    height: 4vh;
+    border-radius: 5px;
+    border: 0.1vw solid #d5d5d5;
+    font-size: 1.5vh;
+    padding-left: 1vw;
+  }
+
+  .loginInput:focus {
+    outline: none;
+    background-color: rgb(214, 214, 214);
+  }
+
+  .loginButton {
+    border: none;
+    background-color: #ff3c3c;
+    color: white;
+    font-size: 2vh;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1vh;
+    height: 4vh;
+    margin-bottom: 3vh;
+  }
+
+  .loginButton:hover,
+  .loginButton:active {
+    background-color: #762020;
+  }
+
+  .loginButton:focus {
+    outline: none;
+  }
+
+  .loginButton:disabled {
+    cursor: not-allowed;
+  }
+
+  .signup {
+    text-align: center;
+    color: #000000;
+    text-decoration: underline;
+    font-size: 1.3vh;
+  }
+
+  .labels {
+    font-size: 1.2vh;
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 0.4vh;
+    font-family: "Poppins", sans-serif;
+  }
+  .PassEye {
+    right: 1vh;
+    top: 4.5vh;
+  }
+  .image {
+    width: 17vh;
+    height: auto;
+  }
+}
+
+.modalContent{
+  /* background-color: white; */
+  width: 50%;
+  height: 30%;
+  border: none;
+  outline: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  clip-path: circle(50%);
+  /* background-color: #ffffff56; */
+  /* opacity: 1; */
+  /* box-shadow: .1vw .1vw .1vw .1vw rgb(82, 81, 81) */
+}
+.image.rotate {
+  animation: rotate 10s infinite;
+  width: 14vh; 
+  
+
+}
+
+
+.spinnerContainer{
+  border: 0.2vw solid #000000;
+    border-radius: 100%;
+    height: 21vh;
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 280px) {
+  .signup {
+    text-align: center;
+    font-size: 1.2vh;
+  }
+  .image {
+    width: 12vh;
+    height: auto;
+  }
+
+  .loginButton {
+    height: 4vh;
+  }
+}
+
+@media screen and (max-width:870px) {
+  .modalContent{
+    /* opacity: 0; */
+    box-shadow: none;
+    /* background-color: ; */
+  }
+  
+}

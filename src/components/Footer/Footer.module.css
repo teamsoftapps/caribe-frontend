@@ -1,0 +1,83 @@
+.text {
+  font-size: 0.7vw;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-right: 4vw;
+  margin-top: 2vh;
+  text-align: start;
+  color: gray;
+}
+
+.parentContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  border-bottom: 0.1vw solid rgb(213, 213, 213);
+  align-items: center;
+}
+
+.heading {
+  font-size: 1.7vw;
+  font-weight: bold;
+}
+
+.logo {
+  width: 10vw;
+}
+
+.footerInnerChild {
+  flex: 1 1 0%;
+}
+@media screen and (max-width: 870px) {
+  .footerInnerChild {
+    flex: 1 1;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: start;
+    align-items: start;
+    gap: 12vw;
+  }
+
+  .followImage {
+    width: auto;
+    height: 5vw;
+  }
+
+  .imageContainer {
+    display: flex;
+    gap: 4vw;
+    margin-top: 2vw;
+  }
+
+  .parentContainer {
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 25vw;
+  }
+  .contentContainer {
+    flex-direction: column;
+    color: black;
+    flex-wrap: wrap;
+  }
+
+  .heading {
+    font-size: 4.5vw;
+  }
+
+  .text {
+    font-size: 3vw;
+  }
+}

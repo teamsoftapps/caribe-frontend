@@ -1,0 +1,241 @@
+.login {
+  height: 80vh;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  /* width:  */
+}
+.container {
+  flex: 1;
+}
+.heading {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.header {
+  /* width: 100vw;
+  display: flex;
+  background-color: #ff3c3c;
+  z-index: 100;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  flex: 0.2;
+  height: 20vh;
+  align-items: center; */
+  display: flex;
+    background-color: #ff3c3c;
+    z-index: 100;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    flex: 0.2 1;
+    height: 20vh;
+    align-items: center;
+    width: 100vw;
+}
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* width: 40vw; */
+}
+.loginBox {
+  padding: 2vh;
+  width: 50vh;
+  height: 55vh;
+  margin-top: 5vh;
+  background-color: white;
+  border-radius: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.loginMblbox {
+  flex: 0.8;
+  margin-top: 5vh;
+  flex-direction: column;
+  display: flex;
+}
+.loginInput {
+  margin-bottom: 1vh;
+  height: 4vh;
+  border-radius: 5px;
+  border: 0.1vw solid gray;
+  font-size: 2vh;
+  padding-left: 2vh;
+}
+.loginInput:focus {
+  outline: none;
+}
+.loginButton {
+  margin-top: 2.5vh;
+  height: 6vh;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff3c3c;
+  color: white;
+  font-size: 2vh;
+  font-weight: 500;
+  cursor: pointer;
+}
+.loginButton:hover,
+.loginButton:active {
+  background-color: #762020;
+}
+.loginButton:focus {
+  outline: none;
+}
+.signup {
+  font-size: 1.5vh;
+}
+.forget {
+  text-align: end;
+  color: #923434;
+  text-decoration: underline;
+  margin: 0;
+
+  font-size: 2vh;
+}
+.labels {
+  margin-top: 1vh;
+  font-weight: 700;
+  text-align: start;
+  margin-bottom: 0.2vh;
+  font-family: "Poppins", sans-serif;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.changeMode{
+  font-weight: bold;
+   color: red
+}
+
+.changeMode:hover{
+  color: rgb(103, 23, 23);
+}
+
+.PassEye {
+  height: auto;
+  width: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 1vh;
+  top: 5.3vh;
+}
+.image {
+  width: 30vh;
+  height: auto;
+}
+@media screen and (max-width: 800px) {
+  .loginBox {
+    width: 52vh;
+    height: 56vh;
+  }
+
+  .image {
+    width: 25vh;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .forget {
+    font-size: 1.5vh;
+  }
+
+  .login {
+    background-color: white;
+  }
+  .heading {
+    text-align: start;
+    margin-bottom: 4vh;
+  }
+
+  .header {
+    background-color: #ff3c3c;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    height: 15vh;
+  }
+
+  .loginInput {
+    margin-bottom: 0;
+    height: 4vh;
+    border-radius: 5px;
+    border: 0.1vw solid #d5d5d5;
+    font-size: 1.5vh;
+    padding-left: 1vw;
+  }
+
+  .loginInput:focus {
+    outline: none;
+    background-color: rgb(214, 214, 214);
+  }
+
+  .loginButton {
+    border: none;
+    background-color: #ff3c3c;
+    color: white;
+    font-size: 2vh;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1vh;
+    height: 4vh;
+    margin-bottom: 3vh;
+  }
+
+  .loginButton:hover,
+  .loginButton:active {
+    background-color: #762020;
+  }
+
+  .loginButton:focus {
+    outline: none;
+  }
+
+  .loginButton:disabled {
+    cursor: not-allowed;
+  }
+
+  .signup {
+    text-align: center;
+    color: #000000;
+    text-decoration: underline;
+    font-size: 1.3vh;
+  }
+
+  .labels {
+    font-size: 1.2vh;
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 0.4vh;
+    font-family: "Poppins", sans-serif;
+  }
+  .PassEye {
+    right: 1vh;
+    top: 4.5vh;
+  }
+  .image {
+    width: 17vh;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .signup {
+    text-align: center;
+    font-size: 1.2vh;
+  }
+  .image {
+    width: 12vh;
+    height: auto;
+  }
+
+  .loginButton {
+    height: 4vh;
+  }
+}

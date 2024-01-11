@@ -1,0 +1,440 @@
+
+
+.sliderImage {
+  width: 100%;
+  height: auto;
+
+}
+
+.productsContainer {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.trendingText{
+  font-size: 4vw;
+
+}
+
+.exclusiveText{
+  font-size: 1.5vw;
+}
+
+
+
+
+/*  CHANGEDD */
+.mainProductCard {
+  width: 15vw;
+  /* height: 5px; */
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  border: .1vw solid #e6e6e6;
+  border-radius: 2vw;
+  /* background-color: #ff3c3c; */
+  margin-top: 5px;
+  flex-direction: column;
+  height: 15.5vw;
+}
+
+.productImage{
+  width: 13vw;
+  height: 14vw;
+  border-radius: 1.5vw;
+}
+
+.drawerContentOverlay {
+  position: absolute;
+  text-align: start;
+  font-size: 25px;
+  /* top:100px; */
+  top: 7vw;
+  right: 10vw;
+}
+
+.off10 {
+  width: 80vw;
+}
+
+.promo {
+  font-size: 1.6vw;
+}
+
+.smartPhone {
+  width: 24vw;
+  height: 22vw;
+  /* color: */
+}
+
+.promoImagesContainer {
+  display: "flex";
+  /* flex-direction: column; */
+}
+
+.smartwatch {
+  width: 54vw;
+  height: 22vw;
+}
+
+
+
+.webText{
+  font-size: 1.5vw;
+  font-weight: bold;
+  transform: translate(0%, -5vw);
+  position: relative;
+  right: 5vw;
+  opacity: .7;
+}
+
+.pictureText{
+
+}
+
+
+
+
+.mobileServiceCardImage{
+  width: 20vw;
+  height: auto;
+  margin-right: 1vw;
+  margin-bottom: 4vw;
+}
+.mobileDrawerContent {
+  
+  display: flex;
+  align-items: start;
+  text-align: start;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3vw;
+  /* margin-top: 5vw; */
+  margin-top: 13vw;
+}
+
+
+.mobileShopnowButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3c3c;
+  color: white;
+  border: none;
+  height: 9.3vw;
+  width: 28vw;
+  border-radius: 5px;
+  margin-bottom: 5vw;
+  
+}
+.mobileDrawerWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.sliderButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3c3c;
+  color: white;
+  border: none;
+  height: 2.3vw;
+  width: 8vw;
+  border-radius: 5px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.productsContainer {
+ 
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: "10px";
+  /* align-items: center; */
+  justify-content: center;
+
+  background-color: #ffffff;
+  /* width: 100%; */
+  width: 65vw;
+}
+
+.productCard {
+  display: flex;
+  flex-direction: column;
+  /* background-color: #FF3C3C; */
+  align-items: start;
+
+  border: 1px solid #d1d1d1;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+
+
+.ProductsCardInfo {
+  flex-direction: column;
+  display: flex;
+  align-items: start;
+  width: 80%;
+  /* padding: 5px; */
+  padding-left: 35px;
+  /* padding-top:35px ; */
+  padding-bottom: 35px;
+  padding-right: 35px;
+}
+
+.productNameContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* overflow-x: auto; */
+}
+
+.text {
+  color: #414141;
+}
+.productListContainer {
+  display: flex;
+  justify-content: center;
+  /* overflow-x: auto; */
+}
+
+.productList {
+  display: flex;
+  gap: 10px;
+}
+
+.ProductItem {
+  flex: 0 0 auto;
+  width: 70%;
+
+}
+
+.pormotionCard {
+  color: #ff3c3c;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  font-size: xx-large;
+}
+
+.draweContentStyle{
+font-size: 3.5vw;
+font-weight: bold;
+opacity: .8;
+}
+
+
+/* Product Card----------- */
+
+.mainProductCard {
+  width: 15vw;
+  /* height: 5px; */
+  align-items: center;
+  justify-content: center;
+  margin-right: 1vw;
+  border: .1vw solid #e6e6e6;
+  /* background-color: #ff3c3c; */
+  margin-top: 1vw;
+  flex-direction: column;
+}
+
+
+
+
+
+.ProductsCardInfo {
+  flex-direction: column;
+  display: flex;
+  align-items: start;
+  width: 14vw;
+  /* padding: 5px; */
+  padding-left: 2vw;
+  /* padding-top:35px ; */
+  padding-bottom: 2vw;
+  padding-right: 2vw;
+}
+
+  
+.productNameContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:  12vw;
+
+}
+
+.cardTitle{
+  font-size: 1vw;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.productIcon{
+  width:1.5vw;
+  height: auto;
+}
+
+.productPrice{
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+@media screen and (max-width: 767px) {
+
+  .productsContainer{
+    width: 100vw;
+  }
+  .promoImagesContainer {
+    flex-direction: column;
+  }
+
+
+  .sliderImage {
+    width: 100%;
+    height: auto;
+  
+  }
+
+ 
+  
+
+  .smartPhone {
+    width: 90vw;
+    height: auto;
+  }
+  .smartwatch {
+    width: 90vw;
+    height: 81vw;
+    margin-bottom: 5vw;
+    object-fit: cover;
+
+  }
+
+ 
+
+}
+
+.starSize{
+  width:8vw
+}
+
+.largeHeading{
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  color: #414141;
+  font-size: 2.5vw;
+  font-weight: bold;
+
+
+}
+
+.promotionRed{
+  display: flex;
+  height: 9vw;
+  width: 100%;
+  background-color: #ff3c3c;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.link{
+  text-decoration: none;
+}
+@media screen and (max-width:870px) {
+.promotionRed{height: 28vw;
+}
+
+  .promo{
+    font-size: 3.1vw;
+    font-weight: 500;
+  }
+
+  .largeHeading{
+    font-size: 5vw;
+    text-align: start;
+  }
+
+  .productImage{
+    width: 43vw;
+    height: 49.5vw;
+  }
+
+  .mainProductCard{
+    width: 48vw;
+    height: 51vw;
+  }
+  .starSize{
+    width: 24vw;
+  }
+  .productPrice{
+    font-size: 4.5vw;
+  }
+  .cardTitle{
+    font-size: 3.5vw;
+  }
+
+  .productIcon{
+    width: 5vw;
+
+  }
+  .ProductsCardInfo{
+    margin-top: 1vw;
+    width: 44vw;
+    height: 20vw;
+    justify-content: space-between;
+
+    padding-left: 3vw;
+  }
+ 
+  .productNameContainer{
+    width: 42vw;
+  }
+  .text{
+
+    font-size: 8vw;
+  }
+
+  .pictureText{
+    font-size: 6.5vw;
+    font-weight: bold;
+    transform: translate(0%, -22vw);
+    position: relative;
+    right: 25vw;
+    opacity: ".7",
+  }
+
+  .trendingText{
+    font-size: 7vw;
+    text-align: center;
+    margin-bottom: 2vw;
+  
+  }
+  
+  .exclusiveText{
+    font-size: 3.5vw;
+    text-align: center;
+  }
+  
+}
