@@ -157,7 +157,7 @@ export const FilterPage = () => {
   const [searchKeyword, setSearchKeyword] = useState({});
 
   const fetchData = async () => {
-    const SearchQuery = query.replace(/\s/g, "_");
+    const SearchQuery = query?.replace(/\s/g, "_");
     console.log("search Query", SearchQuery);
     try {
       setIsLoading(true);

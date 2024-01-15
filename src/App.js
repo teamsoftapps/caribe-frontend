@@ -19,6 +19,7 @@ import { useEffect } from "react";
 function Apps() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    console.log(process.env.REACT_APP_BackendURL, "Backend URL");
   }, []);
 
   return (

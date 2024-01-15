@@ -99,7 +99,7 @@ export const Productpage = () => {
   const productImage = location.state.product.image;
   const productTitle = location.state.product.title;
   const productPrice = location.state.product.price;
-  const query = location.state.query.replace(/\s/g, "_");
+  const query = location?.state?.query?.replace(/\s/g, "_");
 
   // const Products = useSelector((state) => state.cart.products);
 
@@ -143,7 +143,7 @@ export const Productpage = () => {
 
   const onAddToCart = () => {
     const price =
-      parseFloat(location.state.product.price.replace("$", "")) * quantity;
+      parseFloat(location?.state?.product?.price?.replace("$", "")) * quantity;
 
     dispatch(
       addItemInACart({

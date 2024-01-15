@@ -45,13 +45,17 @@ const Navbar = ({ showSearch, setQuery, query, handleOnSubmit }) => {
 
   useEffect(() => {
     const fetchUserData = async () => {
-      const res = await getUserProfile();
-      dispatch(setEmail(res?.data?.data?.email));
-      dispatch(
-        setUserName(
-          `${res?.data?.data?.firstname} ${res?.data?.data?.lastname}`
-        )
-      );
+      try {
+        const res = await getUserProfile();
+        dispatch(setEmail(res?.data?.data?.email));
+        dispatch(
+          setUserName(
+            `${res?.data?.data?.firstname} ${res?.data?.data?.lastname}`
+          )
+        );
+      } catch (error) {
+        console.error("Error fetching user data:", error);
+      }
     };
 
     fetchUserData();
@@ -70,7 +74,7 @@ const Navbar = ({ showSearch, setQuery, query, handleOnSubmit }) => {
       return;
     } else {
       setQuery(event.target.value);
-      // setQuery(event.target.value.replace(/\s/g, "_"));
+      // setQuery(event.target.value.use(/\s/g, "_"));
       console.log(query, "modified Query");
     }
   };
@@ -196,12 +200,18 @@ const Navbar = ({ showSearch, setQuery, query, handleOnSubmit }) => {
                     src={images.person}
                   ></img>
                   <div className={classes.mobileUserProfile}>
-                    <div className={classes.drawerText}>
-                      <div className={classes.link}>{userName}</div>
-                    </div>
-                    <div className={classes.drawerText}>
-                      <div className={classes.link}>{email}</div>
-                    </div>
+                    {email && userName ? (
+                      <>
+                        <div className={classes.drawerText}>
+                          <div className={classes.link}>{userName}</div>
+                        </div>
+                        <div className={classes.drawerText}>
+                          <div className={classes.link}>{email}</div>
+                        </div>
+                      </>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
                 <div
@@ -376,11 +386,15 @@ const Navbar = ({ showSearch, setQuery, query, handleOnSubmit }) => {
                     src={images.shoppingCart}
                   ></img>
 
-                  <img
-                    onClick={handleOnpenuser}
-                    className={classes.contactIcons}
-                    src={images.user}
-                  ></img>
+                  {email && userName ? (
+                    <img
+                      onClick={handleOnpenuser}
+                      className={classes.contactIcons}
+                      src={images.user}
+                    ></img>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
             </div>
